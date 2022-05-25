@@ -28,7 +28,7 @@ namespace StackAndQueue
         {
             if (front == null)
             {
-                Console.WriteLine("Stack is empty!!");
+                Console.WriteLine("Queue is empty!!");
             }
             Node temp = front;
             while (temp != null)
@@ -36,6 +36,16 @@ namespace StackAndQueue
                 Console.Write(temp.data + "->");
                 temp = temp.next;
             }
+        }
+        public void Dequeue()
+        {
+            if (front == null)
+            {
+                Console.WriteLine("Queue is empty!! deletion is not possible");
+                return;
+            }
+            Console.WriteLine("\n{0} element is removed",this.front.data);
+            this.front = this.front.next;
         }
     }
 }

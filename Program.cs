@@ -28,6 +28,8 @@ namespace StackAndQueue
                     queueobj.Enqueue(30);
                     queueobj.Enqueue(70);
                     queueobj.Display();
+                    queueobj.Dequeue();
+                    queueobj.Display();
                     break ;
                 default:
                     Console.WriteLine("Invalid input");
