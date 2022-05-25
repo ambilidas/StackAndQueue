@@ -22,8 +22,16 @@ namespace StackAndQueue
                     stackobj.Pop();
                     stackobj.Display();
                     break;
-                // case 1:
-
+                 case 1:
+                    Queue queueobj = new Queue();
+                    queueobj.Enqueue(56);
+                    queueobj.Enqueue(30);
+                    queueobj.Enqueue(70);
+                    queueobj.Display();
+                    break ;
+                default:
+                    Console.WriteLine("Invalid input");
+                    break;
             }
            
             Console.ReadKey();
